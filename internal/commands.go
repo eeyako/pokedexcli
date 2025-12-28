@@ -17,7 +17,7 @@ type cliCommand struct {
 }
 
 /*
-List of all commands availabe in the program.
+List of all commands available in the program.
 Contains their name, description and Callback function
 */
 func GetCommands() map[string]cliCommand {
@@ -97,7 +97,7 @@ Lists to the user the 20 next location areas to explore.
 */
 func commandMapForward(_ string) error {
 	if nextUrl == "" {
-		fmt.Printf("Error: cannot map futher.\n")
+		fmt.Printf("Error: cannot map further.\n")
 		return nil
 	}
 	printLocationAreas(nextUrl)
@@ -168,7 +168,7 @@ func commandExplore(areaName string) error {
 
 /*
 commandCatch
-Tries to catch the given Pokemon name. If succeedes, adds that to the pokemon
+Tries to catch the given Pokemon name. If succeeds, adds that to the pokemon
 map
 */
 func commandCatch(pokemonName string) error {
